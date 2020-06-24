@@ -19,10 +19,10 @@ public class Solution {
     // 需要执行开方运算时可使用Math.sqrt()方法
     public static double[] calculate(int a, int b, int c) {
         double derta = b ^ 2 - 4 * a * c;
-        if ((derta) > 0) {
+        if (derta > 0) {
             return new double[]{(-b + Math.sqrt(derta)) / 2 * a, (-b - Math.sqrt(derta)) / 2 * a};
-        } else if ((derta) == 0) {
-            return new double[]{(-b + Math.sqrt(derta)) / 2 * a};
+        } else if (derta == 0) {
+            return new double[]{1.0*(-b) / 2 * a};
         } else {
             return new double[]{};
         }
