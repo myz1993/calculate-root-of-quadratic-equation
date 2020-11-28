@@ -8,6 +8,7 @@ public class Solution {
     //声明存放两个根的变量
     private static double x1;
     private static double x2;
+
     public static void main(String[] args) {
         System.out.println("x^2-2x+1=0的解是：" + Arrays.toString(calculate(1, -2, 1)));
         System.out.println("x^2-4=0的解是：" + Arrays.toString(calculate(1, 0, -4)));
@@ -24,16 +25,16 @@ public class Solution {
         if (b * b - 4 * a * c > 0) {
             //两个根
             d = new double[2];
-            x1 = (-b+Math.sqrt(b*b-4*a*c))/2*a;
-            x2 = (-b-Math.sqrt(b*b-4*a*c))/2*a;
-            d[0]=x1;
-            d[1]=x2;
+            x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / 2 * a;
+            x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / 2 * a;
+            d[0] = x1;
+            d[1] = x2;
 
         } else if (b * b - 4 * a * c == 0) {
             //一个根
             d = new double[1];
-            x1 = (-b+Math.sqrt(b*b-4*a*c))/2*a;
-            d[0]=x1;
+            x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / 2 * a;
+            d[0] = x1;
         } else {
             //无根
             d = new double[0];
