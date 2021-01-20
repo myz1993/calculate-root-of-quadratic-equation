@@ -1,6 +1,5 @@
 package com.github.hcsp.calculation;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Solution {
@@ -16,20 +15,5 @@ public class Solution {
     // 若没有根，返回一个空数组，即：new double[] {}
     // 提示，你可利用求根公式x=[-b±√(b²-4ac)]/2a
     // 需要执行开方运算时可使用Math.sqrt()方法
-    public static double[] calculate(int a, int b, int c) {
-        double temp = b * b - 4 * a * c;
-        /*if (temp < 0) {
-            return new double[] {};
-        }*/
-        double root1 = ((-b + Math.sqrt(temp)) / 2 * a);
-        double root2 = ((-b - Math.sqrt(temp)) / 2 * a);
-        if (Double.isNaN(root1) || Double.isNaN(root2)) {
-            return new double[] {};
-        }
-        if (root1 == root2) {
-            return new double[] {root1};
-        } else {
-            return new double[] {root1, root2};
-        }
-    }
+    public static double[] calculate(int a, int b, int c) {}
 }
