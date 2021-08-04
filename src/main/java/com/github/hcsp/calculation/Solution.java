@@ -28,7 +28,15 @@ public class Solution {
             double[] d = new double[] {y };
             return d;
         }
-        double[] d = new double[] {x };
+        if (Double.isNaN(y)) {
+            double[] d = new double[]{x};
+            return d;
+        }
+        if (x == y) {
+            double[] d = new  double[] {x};
+            return d;
+        }
+        double[] d = new double[] {x, y};
         return  d;
     }
 }
