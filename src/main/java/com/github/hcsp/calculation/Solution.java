@@ -18,12 +18,12 @@ public class Solution {
     public static double[] calculate(int a, int b, int c) {
 
         if (b * b - 4 * a * c > 0) {
-            double root1 = (double)(-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-            double root2 = (double)(-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+            double root1 = (double) (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+            double root2 = (double) (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
             return new double[]{root1, root2};
 
-        } else if (b * b - 4 * a * c == 0){
-            double root = (double)(-b)/(2 * a);
+        } else if (b * b - 4 * a * c == 0) {
+            double root = (double)(-b) / (2 * a);
             return new double[]{root};
         }
         return new double[]{};
