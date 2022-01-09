@@ -23,7 +23,7 @@ public class Solution {
             return new double[]{root1, root2};
 
         } else if (b * b - 4 * a * c == 0) {
-            double root = (double)(-b) / (2 * a);
+            double root = (double) (-b) / (2 * a);
             return new double[]{root};
         }
         return new double[]{};
